@@ -19,7 +19,7 @@
 </head>
 
 
-<body class="container44">
+<body class="container-fluid">
     <!-- Start Code -->
 
     <!-- Navbar -->
@@ -41,6 +41,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/sunqfuu"><i class="fa-brands fa-github"></i>
                             Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerId">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginId">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
@@ -67,6 +73,246 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Carousel -->
+
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="./img/1.jpg" class="w-100 d-block" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/2.jpg" class="w-100 d-block" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+                <img src="./img/3.jpg" class="w-100 d-block" alt="Third slide" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+
+    <!-- Card -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./img/5.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">HTML Tanımı</h4>
+                        <p class="card-text">HTML (HyperText Markup Language), web sayfalarını oluşturmak için
+                            kullanılan bir işaretleme dilidir. Web tarayıcıları, HTML kodlarını okuyarak metinleri,
+                            resimleri, bağlantıları ve diğer içerikleri kullanıcıya görsel olarak sunar.
+
+                            HTML, temel olarak etiketler (tags) kullanılarak yapılandırılır. Her etiket, belirli bir
+                            işlevi yerine getirir ve genellikle açılış ve kapanış şeklinde kullanılır. Örneğin, etiketi
+                            bir paragrafı belirtirken, etiketi başlıkları oluşturur.
+
+                            HTML, tek başına bir programlama dili değildir; ancak CSS (Cascading Style Sheets) ve
+                            JavaScript ile birlikte kullanılarak interaktif ve estetik web sayfaları oluşturulabilir.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./img/3.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">CSS Tanımı</h4>
+                        <p class="card-text">CSS (Cascading Style Sheets), HTML ile oluşturulan web sayfalarının
+                            görünümünü ve düzenini belirlemek için kullanılan bir stil dilidir. CSS sayesinde metinlerin
+                            rengi, yazı tipi, arka plan, kenarlıklar, boşluklar ve sayfa düzeni gibi birçok görsel öğe
+                            kolayca şekillendirilebilir.
+
+                            CSS, HTML'den ayrı bir dosyada veya doğrudan HTML içinde tanımlanabilir. Üç temel kullanım
+                            yöntemi vardır:
+
+                            1 - Satır içi CSS (Inline CSS)
+                            2 - Dahili CSS (Internal CSS)
+                            3 - Harici CSS (External CSS)
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./img/1.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">Bootstrap Tanımı</h4>
+                        <p class="card-text">Bootstrap, duyarlı (responsive) ve modern web tasarımları oluşturmak için
+                            kullanılan popüler bir HTML, CSS ve JavaScript kütüphanesidir. Twitter tarafından
+                            geliştirilmiş ve açık kaynak olarak yayınlanmıştır. Bootstrap, web sitelerinin ve
+                            uygulamalarının hızlı ve kolay bir şekilde tasarlanmasını sağlar.
+
+                            Bootstrap’in en önemli özelliklerinden biri, grid sistemi sayesinde esnek ve mobil uyumlu
+                            (responsive) düzenler oluşturabilmesidir. Ayrıca, önceden hazırlanmış butonlar, formlar,
+                            kartlar, açılır menüler, modal pencereler ve animasyonlar gibi birçok bileşen içerir.
+
+                            Bootstrap kullanımı için, projeye aşağıdaki gibi bir CDN bağlantısı eklenerek kolayca
+                            entegre edilebilir</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <!-- Modal trigger button -->
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerId">
+        Register
+    </button>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="registerId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Register
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#!" methot="get" target="_blank">
+                        <div class="container">
+                            <div class="row">
+                                <h1 class="display4 text-center fw-bold text-uppercase">Register</h1>
+                                <div class="form-group mb-3">
+                                    <div class="col-sm12 col-md-1 col-lg-1">
+                                        <label for="uname"> <span class="text-uppercase">name</span></label>
+                                    </div>
+                                    <div class="col-sm12 col-md-11 col-lg-11">
+                                        <input type="text" class="form-control" placeholder="Your Name" id="uname"
+                                            required autofocus="on">
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <div class="col-sm12 col-md-1 col-lg-1">
+                                        <label for="uemail"> <span class="text-uppercase">email</span></label>
+                                    </div>
+                                    <div class="col-sm12 col-md-11 col-lg-11">
+                                        <input type="email" class="form-control" placeholder="Your Email" id="uemail"
+                                            required autofocus="on">
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-2">
+                                    <div class="col-sm12 col-md-1 col-lg-1">
+                                        <label for="upassword"> <span class="text-uppercase">password</span></label>
+                                    </div>
+                                    <div class="col-sm12 col-md-11 col-lg-11">
+                                        <input type="password" class="form-control" placeholder="Your Password"
+                                            id="upassword" required autofocus="on">
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-2">
+                                    <div class="col-sm12 col-md-1 col-lg-1">
+                                        <label for="date"> <span class="text-uppercase">date</span></label>
+                                    </div>
+                                    <div class="col-sm12 col-md-11 col-lg-11">
+                                        <input type="date" class="form-control" placeholder="Your Date" id="upassword"
+                                            required autofocus="on">
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-5">
+                                    <button type="reset" class="btn btn-warning">Clear</button>
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+
+
+    <!-- Modal trigger button -->
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#loginId">
+        Login
+    </button>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Login Your Info
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Body
+                    <form action="#" method="get" target="_blank">
+                        <input type="email" class="form-control" placeholder="Your Email" id="uemail" required
+                            autofocus="on">
+                        <label for="upassword"> <span class="text-uppercase">password</span></label>
+                        <input type="password" class="form-control" placeholder="Your Password" id="upassword" required
+                            autofocus="on">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+
+
 
     <hr>
     <!-- DROPDOW -->
